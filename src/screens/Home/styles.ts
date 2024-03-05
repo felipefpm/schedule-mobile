@@ -24,6 +24,7 @@ export const StyledItemHabitDayDisabled = styled.View`
   border: solid 2px #2e2e2e;
   border-radius: 10px;
   margin: 1.6%;
+  opacity: 0.4;
 `;
 
 export const StyledTextWeekDay = styled.Text`

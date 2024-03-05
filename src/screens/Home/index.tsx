@@ -45,6 +45,7 @@ export function Home() {
               .from({length: amountOfDaysToFill})
               .map((_, index) => (
                 <StyledItemHabitDayDisabled
+                  key={index + '0'}
                   style={{ width: 40, height: 40 }}
                 />
               ))
