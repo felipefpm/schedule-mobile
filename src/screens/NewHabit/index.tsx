@@ -39,7 +39,7 @@ export function NewHabits() {
     <StyledViewContainerNewHabit>
       <ScrollView 
         showsVerticalScrollIndicator={false} 
-        contentContainerStyle={{paddingBottom: 100}}
+        contentContainerStyle={{paddingBottom: 1e00}}
       >
 
         <BackButton />

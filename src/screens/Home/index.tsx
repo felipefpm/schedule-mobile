@@ -1,5 +1,7 @@
-import { generateDates } from '../../utils/generate-dates';
+import { ScrollView } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
+import { generateDates } from '../../utils/generate-dates';
 import { HabitDay } from "../../components/HabitDay";
 import { Header } from "../../components/Header";
 
@@ -10,7 +12,6 @@ import {
   StyledViewWeekDaysBody, 
   StyledViewWeekDaysHeader 
 } from './styles'
-import { ScrollView } from 'react-native';
 
 const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
 const datesFromYearStart = generateDates();
@@ -18,6 +19,8 @@ const minimumDateSizes = 18 * 5;
 const amountOfDaysToFill = minimumDateSizes - datesFromYearStart.length
 
 export function Home() {
+  const { navigate } = useNavigation()
+
   return (
     <StyledViewContainer>
       <Header />
@@ -36,7 +39,10 @@ export function Home() {
         <StyledViewWeekDaysBody>
           {
             datesFromYearStart.map(date => (
-              <HabitDay key={date.toISOString()} />
+              <HabitDay 
+                key={date.toISOString()} 
+                onPress={() => navigate('habitday', { date: date.toISOString() })}
+              />
             ))
           }
 
