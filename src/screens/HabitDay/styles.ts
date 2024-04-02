@@ -19,6 +19,13 @@ export const StyledTextDayAndMonth = styled.Text`
   font-size: 43px;
 `;
 
+export const StyledTextDatePast = styled.Text`
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+`;
+
 export const StyledViewCheckBoxHabits = styled.View`
   margin-top: 6%;
 `;

@@ -14,16 +14,16 @@ export const StyledItemHabitDay = styled(TouchableOpacity)`
     if (backgroundType > 0 && backgroundType < 20) {
       return 'rgb(76 29 149)'
     }
-    if (backgroundType > 20 && backgroundType < 40) {
+    if (backgroundType >= 20 && backgroundType < 40) {
       return 'rgb(91 33 182)'
     }
-    if (backgroundType > 40 && backgroundType < 60) {
+    if (backgroundType >= 40 && backgroundType < 60) {
       return 'rgb(109 40 217)'
     }
-    if (backgroundType > 60 && backgroundType < 80) {
+    if (backgroundType >= 60 && backgroundType < 80) {
       return 'rgb(124 58 237)'
     }
-    if (backgroundType < 80) {
+    if (backgroundType >= 80) {
       return 'rgb(139 92 246)'
     }
   }};
@@ -34,13 +34,13 @@ export const StyledItemHabitDay = styled(TouchableOpacity)`
     if (backgroundType > 0 && backgroundType < 20) {
       return 'solid 2px rgb(109 40 217)'
     }
-    if (backgroundType > 20 && backgroundType < 40) {
+    if (backgroundType >= 20 && backgroundType < 40) {
       return 'solid 2px rgb(124 58 237)'
     }
-    if (backgroundType > 40 && backgroundType < 80) {
+    if (backgroundType >= 40 && backgroundType < 80) {
       return 'solid 2px rgb(139 92 246)'
     }
-    if (backgroundType < 80) {
+    if (backgroundType >= 80) {
       return 'solid 2px rgb(167 139 250)'
     }
     if (currentDay) {
