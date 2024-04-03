@@ -4,8 +4,8 @@ export const StyledViewContainer = styled.View`
   flex: 1;
   background-color: #141313;
   padding-top: 18%;
-  padding-right: 6%;
-  padding-left: 6%;
+  padding-right: 2%;
+  padding-left: 4%;
 `;
 
 export const StyledViewWeekDaysHeader = styled.View`
@@ -16,7 +16,7 @@ export const StyledViewWeekDaysHeader = styled.View`
 export const StyledViewWeekDaysBody = styled.View`
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1%;
+  width: 100%;
 `;
 
 export const StyledItemHabitDayDisabled = styled.View`
@@ -29,10 +29,10 @@ export const StyledItemHabitDayDisabled = styled.View`
 
 export const StyledTextWeekDay = styled.Text`
   color: #636262;
-  width: 40px;
+  width: 12%;
   height: 40px;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  margin: 1.7%;
+  margin: 1%;
 `;

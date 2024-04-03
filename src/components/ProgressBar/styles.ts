@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import Animated from 'react-native-reanimated';
 
 export const StyledViewContainerProgressBar = styled.View`
   width: 100%;
@@ -8,7 +9,7 @@ export const StyledViewContainerProgressBar = styled.View`
   margin-top: 4%;
 `;
 
-export const StyledViewContentProgressBar = styled.View`
+export const StyledViewContentProgressBar = styled(Animated.View)`
   height: 15px;
   border-radius: 8px;
   background-color: #440099;
